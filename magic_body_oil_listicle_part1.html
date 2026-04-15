@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Spent £600 Testing Every Body Oil & Firming Cream — Here's What Actually Changed My Skin</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF6F0;
+    --warm-white: #FFFDF9;
+    --text-dark: #1C1410;
+    --text-mid: #4A3728;
+    --text-light: #7A6355;
+    --gold: #C4975A;
+    --gold-light: #E8C98A;
+    --blush: #E8D5C4;
+    --blush-deep: #D4B49A;
+    --border: #E0D0C0;
+    --red-flag: #C0392B;
+    --green-check: #2E7D5E;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--text-dark);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  /* TOP BAR */
+  .top-bar {
+    background: var(--text-dark);
+    color: var(--gold-light);
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 500;
+  }
+
+  /* SITE NAV */
+  .site-nav {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-nav .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--text-dark);
+    letter-spacing: 1px;
+  }
+  .site-nav .nav-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+
+  /* ARTICLE WRAPPER */
+  .article-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  /* CATEGORY LABEL */
+  .category-label {
+    font-size: 10.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  /* HEADLINE */
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.2;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+  }
+
+  /* SUBHEADLINE */
+  .deck {
+    font-size: 19px;
+    font-style: italic;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  /* BYLINE */
+  .byline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 36px;
+  }
+  .byline-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blush-deep), var(--gold-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: white;
+    flex-shrink: 0;
+  }
+  .byline-text {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+  .byline-text strong {
+    color: var(--text-dark);
+    font-size: 14px;
+    display: block;
+    font-weight: 500;
+  }
+
+  /* READ FIRST BOX */
+  .read-first {
+    background: #FFF8F0;
+    border-left: 3px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+    padding: 18px 22px;
+    margin-bottom: 36px;
+    font-size: 15px;
+    color: var(--text-mid);
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .read-first strong {
+    font-style: normal;
+    color: var(--text-dark);
+  }
+
+  /* COMPARISON TABLE */
+  .comparison-wrap {
+    margin: 36px 0;
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 13.5px;
+  }
+  thead tr {
+    background: var(--text-dark);
+    color: white;
+  }
+  thead th {
+    padding: 14px 16px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  thead th:first-child { text-align: left; }
+  thead th.highlight {
+    background: var(--gold);
+    color: var(--text-dark);
+    font-weight: 700;
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:nth-child(even) { background: #FDFAF7; }
+  tbody td {
+    padding: 13px 16px;
+    text-align: center;
+    color: var(--text-mid);
+    font-size: 13px;
+  }
+  tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  .check { color: var(--green-check); font-size: 16px; }
+  .cross { color: #bbb; font-size: 16px; }
+  .star { color: var(--gold); font-size: 13px; }
+  .table-caption {
+    font-size: 11.5px;
+    color: var(--text-light);
+    text-align: center;
+    padding: 10px 16px;
+    background: #FDFAF7;
+    border-top: 1px solid var(--border);
+    font-style: italic;
+  }
+
+  /* BODY COPY */
+  p {
+    margin-bottom: 22px;
+    color: var(--text-dark);
+  }
+
+  /* SECTION INTRO */
+  .section-intro {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--text-mid);
+    line-height: 1.65;
+    margin-bottom: 32px;
+    font-weight: 300;
+  }
+
+  /* LIST ITEM */
+  .list-item {
+    margin: 52px 0;
+    padding-bottom: 52px;
+    border-bottom: 1px solid var(--border);
+  }
+  .list-item:last-child {
+    border-bottom: none;
+  }
+
+  .item-number-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .item-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    line-height: 1;
+    color: var(--blush-deep);
+    font-weight: 700;
+    flex-shrink: 0;
+    letter-spacing: -2px;
+  }
+  .item-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: 1.25;
+    color: var(--text-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* VISUAL COMPARISON BLOCK */
+  .vs-block {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: center;
+    margin: 28px 0;
+  }
+  .vs-side {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .vs-side.loser {
+    opacity: 0.8;
+  }
+  .vs-side.winner {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px var(--gold);
+  }
+  .vs-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    display: block;
+  }
+  .vs-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    display: block;
+  }
+  .vs-descriptor {
+    font-size: 12.5px;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+  .vs-badge {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  .vs-badge.bad { background: #FAEAEA; color: var(--red-flag); }
+  .vs-badge.good { background: #E8F4EE; color: var(--green-check); }
+  .vs-dot {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-align: center;
+  }
+
+  /* CALLOUT QUOTE */
+  .callout-quote {
+    border-left: 3px solid var(--gold);
+    padding: 16px 24px;
+    margin: 28px 0;
+    background: white;
+    border-radius: 0 8px 8px 0;
+  }
+  .callout-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.55;
+    margin-bottom: 10px;
+  }
+  .callout-quote cite {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    font-style: normal;
+  }
+
+  /* SKIN DIAGRAM VISUAL */
+  .skin-visual {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    margin: 28px 0;
+    text-align: center;
+  }
+  .skin-visual-title {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    display: block;
+  }
+  .skin-layers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  .skin-layer {
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .skin-layer.surface { background: #F5EDE2; color: var(--text-mid); }
+  .skin-layer.barrier { background: #E8D9C8; color: var(--text-mid); }
+  .skin-layer.deep { background: #D4C0A8; color: var(--text-dark); }
+  .layer-note {
+    font-size: 11.5px;
+    color: var(--text-light);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  /* INGREDIENT CARD */
+  .ingredient-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin: 28px 0;
+  }
+  .ingredient-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 16px;
+  }
+  .ingredient-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .ingredient-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .ingredient-desc {
+    font-size: 12.5px;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+
+  /* DIVIDER */
+  .ornament {
+    text-align: center;
+    color: var(--gold);
+    font-size: 20px;
+    letter-spacing: 8px;
+    margin: 40px 0;
+    opacity: 0.6;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: var(--text-dark);
+    color: var(--cream);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin: 32px 0;
+  }
+  .highlight-box p {
+    color: var(--cream);
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  .highlight-box strong {
+    color: var(--gold-light);
+  }
+
+  /* TLDR BOX */
+  .tldr-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin: 36px 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .tldr-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .tldr-box p {
+    font-size: 16px;
+    color: var(--text-mid);
+    margin-bottom: 0;
+    line-height: 1.65;
+  }
+
+  /* CONTINUES NOTICE */
+  .continues {
+    background: var(--blush);
+    border-radius: 8px;
+    padding: 20px 24px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .continues p {
+    font-size: 15px;
+    color: var(--text-mid);
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  @media (max-width: 540px) {
+    .vs-block { grid-template-columns: 1fr; }
+    .vs-dot { transform: rotate(90deg); }
+    .ingredient-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">Sponsored Feature &nbsp;·&nbsp; Beauty &amp; Wellness</div>
+
+<nav class="site-nav">
+  <span class="brand">The Beauty Edit</span>
+  <span class="nav-tag">Independent Reviews</span>
+</nav>
+
+<article class="article-wrap">
+
+  <span class="category-label">Body Care · Honest Review</span>
+
+  <h1>I spent £600 testing every body oil and firming cream — here's why your skin still doesn't look the way you want it to</h1>
+
+  <p class="deck">After years of beautiful-smelling products that did almost nothing, I finally understand what body skin actually needs. And it isn't more lotion.</p>
+
+  <div class="byline">
+    <div class="byline-avatar">S</div>
+    <div class="byline-text">
+      <strong>Sophie Harrington</strong>
+      Published March 2025 · Last reviewed April 2025
+    </div>
+  </div>
+
+  <div class="read-first">
+    <strong>Read this before you spend another penny on body moisturiser.</strong> I'm not a dermatologist. I'm a woman who spent three years applying things to her skin every single day, expecting results, and quietly feeling like she was the problem. She wasn't. The products were.
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="comparison-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>What I tested</th>
+          <th>Visible Glow</th>
+          <th>Absorbs Fast</th>
+          <th>Skin Feels Softer</th>
+          <th>No Greasy Residue</th>
+          <th class="highlight">Besque Magic Body Oil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Body Lotion</td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td class="highlight"><span class="star">★★★★★</span></td>
+        </tr>
+        <tr>
+          <td>Body Butter</td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✕</span></td>
+          <td class="highlight"><span class="star">★★★★★</span></td>
+        </tr>
+        <tr>
+          <td>Firming Cream</td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td class="highlight"><span class="star">★★★★★</span></td>
+        </tr>
+        <tr>
+          <td>Single-Oil (e.g. coconut)</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✕</span></td>
+          <td class="highlight"><span class="star">★★★★★</span></td>
+        </tr>
+        <tr>
+          <td>Pharmacy Stretch Mark Oil</td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="cross">✕</span></td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✕</span></td>
+          <td class="highlight"><span class="star">★★★★★</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-caption">TL;DR — Most products do one thing adequately. Only one did everything that actually matters for visible skin beauty.</p>
+  </div>
+
+  <p class="section-intro">I am not someone who gives up easily on body care. I have a dedicated shelf. I do the whole post-shower routine. I've tried the high-street staples, the Sephora bestsellers, the "cult" body oils that beauty editors swear by. And for years, I felt the same way every morning when I looked at my arms, my thighs, the skin on my stomach: <em>why doesn't it look the way I want it to?</em></p>
+
+  <p>This is for every woman who has asked that same quiet question. Who knows she's putting in the effort, but still doesn't see it in her skin. Who's starting to wonder whether it's just… age. Or genetics. Or something she can't change.</p>
+
+  <p>It isn't. Here's what I found out.</p>
+
+  <div class="ornament">· · ·</div>
+
+  <!-- ITEM 1 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">1.</span>
+      <h2 class="item-headline">Body lotion was never designed to make your skin look beautiful. Only to stop it feeling dry.</h2>
+    </div>
+
+    <p>This was the thing nobody told me. I'd been using body lotion like it was a beauty product, expecting it to deliver visible results, and it was never built to do that. Lotion is a maintenance product. Its job is to put a film of moisture on the skin's surface and slow down how fast it evaporates. That's it.</p>
+
+    <p>The result? You apply it, your skin feels softer for a few hours, and then it's back to looking exactly the same as before. Flat. Slightly dull. Unremarkable. You haven't failed. The lotion just ran out of ambition at step one.</p>
+
+    <div class="vs-block">
+      <div class="vs-side loser">
+        <span class="vs-label">What lotion does</span>
+        <span class="vs-name">Surface hydration</span>
+        <p class="vs-descriptor">Sits on the outer layer, softens temporarily, evaporates within hours, leaves no lasting visible change</p>
+        <span class="vs-badge bad">Maintenance only</span>
+      </div>
+      <div class="vs-dot">→</div>
+      <div class="vs-side winner">
+        <span class="vs-label">What skin actually needs</span>
+        <span class="vs-name">Deep nourishment + barrier sealing</span>
+        <p class="vs-descriptor">Oils penetrate the lipid barrier, replenish what's missing, then seal moisture in — leaving skin visibly plumper, softer, more radiant</p>
+        <span class="vs-badge good">Visible beauty</span>
+      </div>
+    </div>
+
+    <p>The science is straightforward once you understand it. Your skin loses moisture through a process called transepidermal water loss — water simply evaporating out through the skin's surface. Lotion slows this down temporarily. But a properly formulated oil blend does something different: it replenishes the lipid layer that holds your skin's structure together, and forms a much richer seal that keeps moisture where it belongs — inside the skin, making it look plump, full, and alive.</p>
+
+    <div class="callout-quote">
+      <p>"Lotion helps for a bit, but my skin still looks dull. I just want it to look healthy, glowy, and expensive."</p>
+      <cite>— A feeling shared by almost every woman I've spoken to about this</cite>
+    </div>
+
+    <p>If this sounds like you, you're not imagining it. You've just been using the wrong type of product for the result you actually want.</p>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">2.</span>
+      <h2 class="item-headline">Body butters feel indulgent. But that heaviness is exactly why they don't work.</h2>
+    </div>
+
+    <p>Body butters have this deeply satisfying feeling when you scoop them out. Rich, thick, luxurious. The problem is that texture is also their biggest flaw. Because of how dense they are, they sit on top of the skin rather than sinking in. They form a heavy occlusive coat that can feel beautiful immediately after application — and still leave your skin looking the same underneath.</p>
+
+    <p>Worse, that heaviness transfers. To your clothes. To your bedsheets. To the chair you sat down on three minutes after applying. Which means most women end up using body butter far less often than they intend to, because the experience is inconvenient. A product you don't use consistently cannot change your skin.</p>
+
+    <div class="skin-visual">
+      <span class="skin-visual-title">Why texture matters for absorption</span>
+      <div class="skin-layers">
+        <div class="skin-layer surface">
+          <span>Skin Surface</span>
+          <span class="layer-note">Where butter sits and stays</span>
+        </div>
+        <div class="skin-layer barrier">
+          <span>Lipid Barrier</span>
+          <span class="layer-note">Where oils actually work</span>
+        </div>
+        <div class="skin-layer deep">
+          <span>Deeper Skin Layers</span>
+          <span class="layer-note">Where long-term softness lives</span>
+        </div>
+      </div>
+      <p style="font-size:13px; color: var(--text-light); font-style: italic;">A body oil with the right molecular weight reaches the lipid barrier in seconds. Body butter never gets close.</p>
+    </div>
+
+    <p>What actually changes the appearance of skin isn't something that sits on top of it. It's something that gets inside it quickly, fills in what's depleted, and then seals the surface so what's been deposited stays there. That's the difference between skin that looks temporarily soft and skin that looks genuinely, visibly nourished.</p>
+
+    <div class="highlight-box">
+      <p>The irony of body butter: the more luxurious it feels in your hand, the less likely it is to actually reach the skin layers where visible change happens. <strong>Richness is not the same as efficacy.</strong></p>
+    </div>
+  </div>
+
+  <!-- ITEM 3 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">3.</span>
+      <h2 class="item-headline">"Firming" creams are selling you a word. The science doesn't back them up.</h2>
+    </div>
+
+    <p>I want to be careful here, because I know how much hope gets pinned to the word "firming." I've pinned it myself. I've bought the cream, used it religiously for six weeks, and wanted — so desperately — to see something change in the crepey-looking skin on my inner arms or the looseness under my thighs.</p>
+
+    <p>Here's what the research actually says: a topical cream cannot tighten skin. Skin appears loose or crepey because of changes in collagen, elastin, and the fat and tissue beneath it — none of which are reachable by something applied to the surface. What "firming" creams actually do, when they work at all, is temporarily plump the surface with water. The moment that water evaporates, you're back to where you started.</p>
+
+    <div class="callout-quote">
+      <p>"I've tried so many firming products. Honestly, I don't know anymore whether anything actually works or whether I just <em>want</em> it to."</p>
+      <cite>— From a beauty community thread on body care for women over 35</cite>
+    </div>
+
+    <p>This is not a reason to give up. It's a reason to be more honest about what we're actually buying — and what realistic, beautiful improvement actually looks like. Skin that looks plumper. Skin that has a radiant, healthy glow. Skin that feels so soft you touch it without thinking. That's real. That's achievable. That's just not what "firming" cream promises — or delivers.</p>
+
+    <p>The most convincing "firming" result you can get from a topical product is sustained, deep nourishment that keeps the skin surface looking full and smooth. That's a job for oil, not cream. And it requires consistency, not a miracle.</p>
+  </div>
+
+  <!-- ITEM 4 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">4.</span>
+      <h2 class="item-headline">Single oils (coconut, almond, rosehip alone) are too simple for what your skin is missing.</h2>
+    </div>
+
+    <p>When I first switched from lotion to oil, I grabbed a bottle of pure coconut oil from my kitchen. It felt revolutionary for about a week. My skin was genuinely softer. Then the problems started. It was too heavy. Too greasy. I was ruining things I touched. And after a month, the visible improvement had plateaued — my skin looked better than with lotion, but still not the way I actually wanted it to look.</p>
+
+    <p>Single oils are limited by their own molecular nature. They can do one thing well — usually either absorbing quickly or nourishing deeply, rarely both. And skin isn't asking for one thing. Depleted, dull body skin is missing multiple types of lipids, fatty acids, and vitamins simultaneously. No single oil addresses all of them.</p>
+
+    <div class="ingredient-grid">
+      <div class="ingredient-card">
+        <span class="ingredient-icon">🌿</span>
+        <span class="ingredient-name">Sweet Almond Oil</span>
+        <p class="ingredient-desc">Rich emollient that softens skin texture and helps the blend absorb smoothly</p>
+      </div>
+      <div class="ingredient-card">
+        <span class="ingredient-icon">🌸</span>
+        <span class="ingredient-name">Evening Primrose</span>
+        <p class="ingredient-desc">High in GLA fatty acids that support the skin's natural barrier function</p>
+      </div>
+      <div class="ingredient-card">
+        <span class="ingredient-icon">🌹</span>
+        <span class="ingredient-name">Rosehip Oil</span>
+        <p class="ingredient-desc">Vitamins and essential fatty acids that help skin look more radiant and even</p>
+      </div>
+      <div class="ingredient-card">
+        <span class="ingredient-icon">✨</span>
+        <span class="ingredient-name">Vitamin E</span>
+        <p class="ingredient-desc">Antioxidant protection that helps preserve skin's youthful-looking surface</p>
+      </div>
+    </div>
+
+    <p>This is the reason that a carefully formulated blend of 7 cold-pressed oils behaves so differently from any single oil you could pick up on its own. Each oil is doing a different job — one absorbs fast, one nourishes deep, one helps the barrier, one adds radiance. The result looks like what your skin was supposed to look like, rather than just what a coconut oil can temporarily mimic.</p>
+
+    <div class="tldr-box">
+      <span class="tldr-label">The key insight</span>
+      <p>Your skin isn't just dry. It's <em>visually depleted</em> — missing multiple things at once. A single oil can't address all of them. A precisely blended ritual can.</p>
+    </div>
+  </div>
+
+  <!-- ITEM 5 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">5.</span>
+      <h2 class="item-headline">The greasy residue problem isn't inevitable. It means the oil was formulated wrong.</h2>
+    </div>
+
+    <p>This is the objection I hear most often from women who've tried body oils before and given up on them. "I tried one once. It was too greasy. I got oil stains on everything." And I completely understand — because I lived that exact experience with several products that I was genuinely excited about before I opened them.</p>
+
+    <p>But greasiness isn't a property of body oil in general. It's a property of body oil that was either formulated with the wrong oils, used in the wrong way, or applied to skin that was already dry rather than damp. The way you apply matters enormously. Applied to damp skin immediately after a shower, the right oil blend absorbs in under a minute, leaving skin that feels silky rather than slippery, and glowing rather than shiny.</p>
+
+    <div class="vs-block">
+      <div class="vs-side loser">
+        <span class="vs-label">Wrong application</span>
+        <span class="vs-name">Dry skin + too much oil</span>
+        <p class="vs-descriptor">Oil sits on the surface with nothing to bond to. Takes ages to absorb. Transfers to everything you touch.</p>
+        <span class="vs-badge bad">The greasy nightmare</span>
+      </div>
+      <div class="vs-dot">→</div>
+      <div class="vs-side winner">
+        <span class="vs-label">Right application</span>
+        <span class="vs-name">Damp skin + right-weight blend</span>
+        <p class="vs-descriptor">Oil bonds with the water on your skin, helps lock it in, and absorbs quickly. Dressed and ready in 60 seconds.</p>
+        <span class="vs-badge good">Wardrobe safe</span>
+      </div>
+    </div>
+
+    <p>The women who say body oil "doesn't work for them" were almost always using it wrong — or using a product that wasn't designed to absorb properly. The right formulation, applied to damp skin after your shower, is the difference between an experience you dread and a ritual you look forward to every single morning.</p>
+
+    <p>This is one of the things that genuinely surprised me about Besque Magic Body Oil — not just that it absorbed, but how fast. Sixty to ninety seconds. Then skin that felt like it had been pressed through silk.</p>
+  </div>
+
+  <div class="ornament">· · ·</div>
+
+  <!-- ITEM 6 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">6.</span>
+      <h2 class="item-headline">Cold-pressed matters. Here's the difference between oil that nourishes skin and oil that just coats it.</h2>
+    </div>
+
+    <p>I used to think "cold-pressed" was one of those marketing words — the beauty equivalent of "artisan" on a loaf of bread. Something that sounded premium without meaning anything real. I was wrong, and understanding why changed how I think about every product I put on my skin.</p>
+
+    <p>Most commercial oils are refined using heat and chemical solvents. That process is efficient and cheap, but it strips out a significant portion of what makes an oil genuinely useful for skin — the fatty acids, the vitamins, the natural compounds that interact with your skin's own lipid layer. What's left after refining is a cosmetically acceptable oil that sits on skin and makes it feel temporarily smooth. It's fine. It just doesn't do much.</p>
+
+    <p>Cold-pressed oils are extracted purely by pressure, at low temperatures, which preserves the full biological profile of the plant. The difference in what reaches your skin is meaningful — more intact fatty acids, more vitamins, more of the compounds that your skin's barrier is actually built from. It's the difference between applying something that decorates the surface and something that genuinely replenishes it.</p>
+
+    <div class="highlight-box">
+      <p>Every one of Besque's 7 oils is cold-pressed. Not because it sounds better on the label — because <strong>preserved, intact oils are what your skin's barrier layer is actually made from</strong>. You're not coating your skin. You're feeding it back what it's been losing.</p>
+    </div>
+
+    <p>When you apply Besque Magic Body Oil to damp skin after your shower, you're giving your skin a complete nourishing layer — the kind your body used to produce more easily when it was younger, and that it now needs help maintaining. The visible difference is not subtle. It shows up the same morning.</p>
+  </div>
+
+  <!-- ITEM 7 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">7.</span>
+      <h2 class="item-headline">The scent is doing something your perfume can't — and women are noticing.</h2>
+    </div>
+
+    <p>I want to talk about scent, because I think it's one of the most underrated aspects of a body care product — and one of the most misunderstood. Most body products either smell overwhelmingly synthetic, or they smell like nothing, or they smell pleasant for exactly thirty seconds and then disappear entirely. None of those experiences makes you actually want to use something every day.</p>
+
+    <p>Besque Magic Body Oil smells like something else entirely. It's warm without being heavy. Feminine without being sweet. The geranium and lavender give it a softness, and the patchouli grounds it into something that lingers on skin in the best possible way — not as a fragrance blast, but as that quiet warmth you notice when you move.</p>
+
+    <div class="callout-quote">
+      <p>"My husband kept asking what I was wearing. I wasn't wearing anything. It was just the oil."</p>
+      <cite>— The experience that convinced me scent was part of the result, not a bonus</cite>
+    </div>
+
+    <p>This matters for more than the obvious reason. A product that smells genuinely beautiful is a product you use consistently. And consistency is the only thing that changes skin over time. If your body care routine feels like a chore — clinical, forgettable, something you do because you should — you'll skip it more often than you think. But if it's the part of your morning that feels indulgent, that gives you sixty seconds of genuine pleasure, that you actually look forward to — you do it every day without thinking about it.</p>
+
+    <p>That daily consistency is what creates the visible improvement. The scent isn't decoration. It's the mechanism that keeps you showing up.</p>
+
+    <div class="vs-block">
+      <div class="vs-side loser">
+        <span class="vs-label">Generic body product</span>
+        <span class="vs-name">Fades in minutes</span>
+        <p class="vs-descriptor">Synthetic fragrance that smells fine in the bottle and disappears by the time you're dressed. Nothing lingers. Nothing gets noticed.</p>
+        <span class="vs-badge bad">Forgettable</span>
+      </div>
+      <div class="vs-dot">→</div>
+      <div class="vs-side winner">
+        <span class="vs-label">Besque Magic Body Oil</span>
+        <span class="vs-name">Warm, feminine, lasting</span>
+        <p class="vs-descriptor">Natural essential oils from geranium, lavender, and patchouli that settle into skin and stay — subtle enough to layer with perfume, beautiful enough on their own.</p>
+        <span class="vs-badge good">Gets noticed</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 8 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">8.</span>
+      <h2 class="item-headline">60 seconds after your shower. That's the entire ritual. And it's the only one that's actually worked for me.</h2>
+    </div>
+
+    <p>One of the reasons I think women give up on body care routines is that they're too complicated to maintain. The ones that promise real results always seem to involve multiple steps, multiple products, waiting between layers, remembering what goes on first. Real life doesn't accommodate a ten-step body routine. You have seven minutes between your shower and needing to leave the house, and if a product doesn't fit inside that window, it doesn't get used.</p>
+
+    <p>Here is the entire Besque routine: step out of the shower, pat skin lightly — not fully dry, just not dripping. Apply a small amount of Magic Body Oil, work it across your arms, legs, stomach, anywhere you want skin to look better. Wait sixty seconds. Get dressed.</p>
+
+    <p>That's it. No second layer. No waiting. No transferring to your clothes.</p>
+
+    <div class="skin-visual">
+      <span class="skin-visual-title">The 60-second post-shower ritual</span>
+      <div class="skin-layers">
+        <div class="skin-layer surface" style="justify-content: center; gap: 16px;">
+          <span>🚿</span>
+          <span>Step out of shower — skin still damp</span>
+        </div>
+        <div class="skin-layer barrier" style="justify-content: center; gap: 16px;">
+          <span>💧</span>
+          <span>Apply Magic Body Oil, work in gently</span>
+        </div>
+        <div class="skin-layer deep" style="justify-content: center; gap: 16px;">
+          <span>✨</span>
+          <span>60 seconds later — dressed, glowing, done</span>
+        </div>
+      </div>
+      <p style="font-size:13px; color: var(--text-light); font-style: italic;">Damp skin is the key. The oil bonds with the water, absorbs faster, and locks in far more moisture than applying to dry skin ever could.</p>
+    </div>
+
+    <p>The reason this works so well — beyond the formula — is the timing. When your skin is still damp from the shower, it's in the optimal state for absorption. The warm water has opened the pores slightly, and the surface moisture gives the oil something to bond with, which dramatically speeds up how fast it sinks in. Apply it to dry skin and you'll wait much longer and get a fraction of the result.</p>
+
+    <p>I've been doing this every morning for several months. My skin doesn't look the same as it did before I started. That's not a dramatic claim. It's just the quiet, visible result of sixty consistent seconds every day.</p>
+  </div>
+
+  <!-- ITEM 9 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">9.</span>
+      <h2 class="item-headline">The skin you want to feel confident in isn't gone. It's just been waiting for the right thing.</h2>
+    </div>
+
+    <p>I want to say something that doesn't get said enough in beauty writing, because it tends to get buried under before-and-afters and ingredient lists: the reason this matters isn't really about skin.</p>
+
+    <p>It's about how you feel in your body. Whether you reach for the sleeveless dress or leave it hanging. Whether you feel soft and feminine when someone touches your arm, or whether you pull away slightly. Whether you step out of the shower and feel comfortable in your own skin, or whether you dress quickly and don't look too closely.</p>
+
+    <p>Those feelings are real. They're not vanity. And they don't require a dramatic transformation to shift — they just require the quiet, daily experience of noticing that your skin looks better than it did before. That it feels softer than you expected. That when you catch the light, there's something there that wasn't there before. A glow. A fullness. A sense that your skin looks <em>cared for</em>.</p>
+
+    <div class="callout-quote">
+      <p>"I want to feel attractive again when I look at my body. I miss when my skin looked smoother and more alive. I want to feel soft, feminine, and confident in my own skin."</p>
+      <cite>— What most women in this category are actually trying to buy, even if the product page doesn't say it</cite>
+    </div>
+
+    <p>That's what Besque Magic Body Oil is actually for. Not a miracle. Not a medical intervention. A daily ritual that makes visible, real, touchable improvement possible — and that makes the ritual itself feel feminine, indulgent, and worth doing.</p>
+
+    <p>The women who've made this part of their morning often say the same thing: they don't just notice a difference in their skin. They notice a difference in how they carry themselves. That's not marketing language. That's what happens when you stop feeling like your body is something to manage and start treating it like something worth caring for beautifully.</p>
+  </div>
+
+  <!-- ITEM 10 -->
+  <div class="list-item">
+    <div class="item-number-wrap">
+      <span class="item-number">10.</span>
+      <h2 class="item-headline">The only body oil on this list I'd actually repurchase. With a guarantee so I didn't have to take the risk.</h2>
+    </div>
+
+    <p>After everything I tested — every lotion, butter, firming cream, single oil, pharmacy stretch-mark product, and premium import — there was one I repurchased without hesitation. Besque Magic Body Oil.</p>
+
+    <p>Not because it was the most expensive. Not because of the most elaborate claims. Because it was the only product that delivered all of the things I actually care about, consistently, without any of the drawbacks that made everything else eventually end up at the back of the cabinet.</p>
+
+    <div class="comparison-wrap" style="margin: 28px 0;">
+      <table>
+        <thead>
+          <tr>
+            <th>What I needed</th>
+            <th class="highlight">Besque Magic Body Oil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Absorbs fast enough to get dressed immediately</td>
+            <td class="highlight"><span class="check">✓</span> 60–90 seconds on damp skin</td>
+          </tr>
+          <tr>
+            <td>Skin looks visibly better — not just temporarily soft</td>
+            <td class="highlight"><span class="check">✓</span> Plumper, more radiant, noticeably glowing</td>
+          </tr>
+          <tr>
+            <td>Scent I actually look forward to</td>
+            <td class="highlight"><span class="check">✓</span> Warm, feminine, lingers beautifully</td>
+          </tr>
+          <tr>
+            <td>No staining on clothes or sheets</td>
+            <td class="highlight"><span class="check">✓</span> Wardrobe-safe when applied correctly</td>
+          </tr>
+          <tr>
+            <td>Simple enough to use every single day</td>
+            <td class="highlight"><span class="check">✓</span> One step. Sixty seconds. Done.</td>
+          </tr>
+          <tr>
+            <td>7 cold-pressed, natural oils — not synthetic</td>
+            <td class="highlight"><span class="check">✓</span> Full cold-pressed blend</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The other thing worth mentioning: Besque offers a money-back guarantee. Which meant when I first tried it, I wasn't taking a risk I couldn't afford. I was giving something genuinely different a fair chance. If it hadn't worked, I would have said so here. It worked.</p>
+
+    <div class="highlight-box">
+      <p>If your skin still doesn't look the way you want it to — after everything you've tried — this is the most honest thing I can tell you: <strong>the problem was never you</strong>. It was that you were using products designed to maintain skin, not to make it beautiful. That's a solvable problem. And it takes about sixty seconds a day to solve it.</p>
+    </div>
+  </div>
+
+  <div class="ornament">· · ·</div>
+
+  <!-- FINAL CTA SECTION -->
+  <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 40px 36px; text-align: center; margin-top: 52px; box-shadow: 0 4px 32px rgba(0,0,0,0.06);">
+    <span style="display: block; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; font-weight: 600;">Limited Time Offer</span>
+    <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 4vw, 30px); color: var(--text-dark); margin-bottom: 14px; line-height: 1.25;">Try Besque Magic Body Oil<br>— risk free</h3>
+    <p style="font-size: 16px; color: var(--text-mid); max-width: 440px; margin: 0 auto 28px; line-height: 1.65;">7 cold-pressed oils. 60 seconds after your shower. Skin that looks softer, plumper, and more radiant — or your money back.</p>
+    <a href="#" style="display: inline-block; background: var(--text-dark); color: var(--gold-light); font-family: 'Source Serif 4', serif; font-size: 13px; letter-spacing: 2.5px; text-transform: uppercase; padding: 18px 40px; border-radius: 4px; text-decoration: none; font-weight: 500; transition: background 0.2s;">Try It Risk-Free →</a>
+    <p style="font-size: 12px; color: var(--text-light); margin-top: 18px; font-style: italic;">Money-back guarantee · Natural, cold-pressed oils · Ships to UK, US, CA &amp; AU</p>
+  </div>
+
+</article>
+
+</body>
+</html>
